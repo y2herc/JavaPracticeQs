@@ -1,13 +1,4 @@
-import com.sun.org.apache.xpath.internal.operations.Bool;
-
-public class Main {
-
-    public static void main(String[] args) {
-
-        System.out.println(spinWords("Hey ho baby1"));
-
-    }
-
+public class SpinWords {
     public static String spinWords(String sentence) {
         String result="";
         String[] temp;
