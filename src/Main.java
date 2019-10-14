@@ -4,8 +4,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println(spinWords("Hey ho baby1"));
-
+        ScriptEngineManager mgr = new ScriptEngineManager();
+        ScriptEngine engine = mgr.getEngineByName("JavaScript");
+        String foo = "40+2";
+        System.out.println(engine.eval(foo));
     }
 
     public static String spinWords(String sentence) {
